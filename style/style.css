@@ -1,0 +1,54 @@
+/* Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Root variables */
+:root 
+{
+--color-fondo: #09474b;
+--color-header: #2a7e86;
+--color-section: #c9cacb;
+--color-texto: #ce704b;
+--color-enlace: #bf4e22;
+}
+/* font-family: "Montserrat", sans-serif; */
+/* Body styles */
+body 
+  {
+   font-family: "Montserrat", sans-serif;
+    background-color: var(--color-fondo);
+   color: var(--color-texto);
+   list-style: none;
+  }
+/* Header styles */
+.nav-link 
+  {
+   font-size: 1.50rem;
+   color: var(--color-texto);
+   text-decoration: none;
+   list-style: none;
+   padding: 8px 12px;
+  }
+a 
+  {
+   color: var(--color-enlace);
+   height: 8rem;
+   text-decoration: none;
+   list-style: none;
+  }
+h1  
+  {
+   color: var(--color-enlace);
+   font-size: 3.5rem;
+   font-weight: 700;
+  }
+/* main */
+/* footer */
+p 
+  {
+   font-size: 1.25rem;
+   font-weight: 400;
+  }
+section img 
+  {
+   width: 300px;
+   height: 300px;
+  }
