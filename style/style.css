@@ -1,58 +1,152 @@
 /* Montserrat font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-/* Root variables */
-:root 
-{
---color-fondo: #09474b;
---color-header: #2a7e86;
---color-section: #c9cacb;
---color-texto: #ce704b;
---color-enlace: #bf4e22;
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* RESET Y CONFIGURACIÓN GENERAL */
+* {
+    box-sizing: border-box;
+    margin: 1rem 0;
+    padding: 0;
 }
-/* font-family: "Montserrat", sans-serif; */
+/* Root variables */
+:root{
+    --color-fondo: #09474b;
+    --color-header: #e3821b;
+    --color-section: #c9cacb;
+    --color-texto: #bb8d0f;
+    --color-enlace: #b24115;
+}
 /* Body styles */
-body 
-  {
+body{
    font-family: "Montserrat", sans-serif;
-    background-color: var(--color-fondo);
+   background-color: var(--color-fondo);
    color: var(--color-texto);
    list-style: none;
   }
-/* Header styles */
-.nav-link 
-  {
-   font-size: 1.50rem;
-   color: var(--color-texto);
+/* Header and nav styles */
+header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 12px 5%;
+   background-color:#09474b;
+   box-sizing: border-box;
+   }
+.logo img{
+   width: 220px;
+   height: auto;
+   display: block;
+  }
+nav ul{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   gap: 30px;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+  }
+.nav-link{            
+   font-size: 1rem;  
+   color: #ffffff;
    text-decoration: none;
-   list-style: none;
-   padding: 8px 12px;
+   padding: 8px 0;
   }
-a 
-  {
+.nav-link:hover,
+.nav-link.activo{
+   border-bottom: 2px solid #c58b45;
+   padding-bottom: 8px;
+  }
+/* enlaces */
+a{
    color: var(--color-enlace);
    height: 8rem;
    text-decoration: none;
    list-style: none;
   }
-h1  
-  {
+/* section */
+section{
+   margin-bottom: 2rem;
+   padding: 0 10px;
+}
+
+/* titulos */
+h1{
    color: var(--color-enlace);
    font-size: 3.5rem;
    font-weight: 700;
   }
-/* main */
-/* footer */
-.imagen-portada
-  { 
-    width: 100%; height: 100%; 
+h2{
+   color: var(--color-enlace);
+   font-size: 2.5rem;
+   font-weight: 700;
   }
-p 
-  {
+/* parrafos */
+p{
+   color: var(--color-texto);
    font-size: 1.25rem;
    font-weight: 400;
   }
-section img 
-  {
+/* imagenes */
+.hero{
+  min-height: 85vh;
+  background-image: 
+  linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.3)),
+  url("../assets/fondoinicio.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 40px 20px;
+  box-sizing: border-box; 
+  }
+  .hero-content h1{
+    font-size: clamp(2.5rem,6vw,5rem);
+    margin-bottom: 0;
+    letter-spacing: 4px;
+  }
+  .hero-content h2{
+    font-size: 1.5rem;
+    letter-spacing: 6px;
+    margin-top: 5px;
+    margin-bottom: 35px;
+  }
+  .hero-content p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+  }
+section img{
    width: 300px;
    height: 300px;
   }
+/* botones */
+.hero-buttom{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.buttom{
+  display: inline-block;
+  padding: 16px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.buttom-primary{
+  background-color: #c58b45;
+  color: white;
+}
+.buttom-secondary{
+  border: 2px solid white;
+  color: white;
+}
+.buttom:hover{
+  opacity: 0.85;
+}
+
+/* footer */
