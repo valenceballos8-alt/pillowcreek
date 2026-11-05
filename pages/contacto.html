@@ -3,48 +3,59 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Pillow Creek: equipamiento de camping y aventura.">
         <title>Contacto - PILLOW CREEK</title>
         <link rel="icon" href="../assets/logopillowcreek.png" type="image/png">
         <link rel="stylesheet" href="../style/style.css">
     </head>
     <body>
-        <header class="header">
-            <h1><a href="../index.html" class="logo">PILLOW CREEK</a></h1>
-            <nav class="navbar">
-                <ul>
-                    <li><a class="nav-link" href="../index.html">inicio</a></li>
-                    <li><a class="nav-link" href="nosotros.html">nosotros</a></li>
-                    <li><a class="nav-link" href="productos.html">productos</a></li>
-                    <li><a class="nav-link" href="ofertas.html">sale</a></li>
-                    <li><a class="nav-link" href="contacto.html">contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="contacto">
-                <h2>Contactanos</h2>
-                <p>¿Tenés alguna consulta sobre nuestros productos
-                    o necesitás ayuda con tu orden?
-                    No dudes en contactarnos.</p>
-            </section>
-            <section class="formulario">
-                <h2>Envia tu consulta</h2>
-                <form action="#" method="post" enctype="text/plain">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" required></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
-            </section>
-        </main>
-        <footer id="contacto">
+        <div class="grid-container">
+            <header class="site-header">
+                <a class="logo" href="../index.html" aria-label="Pillow Creek, ir al inicio">
+                    <img src="../assets/logopillowcreek.png" alt="Pillow Creek" width="160" height="80">
+                </a>
+                <nav class="nav" aria-label="Navegación principal">
+                    <ul>
+                        <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li><a class="nav-link" href="productos.html">Productos</a></li>
+                        <li><a class="nav-link" href="ofertas.html">Ofertas</a></li>
+                        <li><a class="nav-link activo" href="contacto.html" aria-current="page">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main id="contenido">
+                <section class="page-intro">
+                    <p class="eyebrow">Estamos para ayudarte</p>
+                    <h1>Contactanos</h1>
+                    <p>¿Tenés alguna consulta sobre nuestros productos o necesitás ayuda con tu pedido? No dudes en contactarnos.</p>
+                </section>
+                <section class="section-wrap contacto-layout" aria-labelledby="formulario-titulo">
+                    <div class="contacto-info">
+                        <h2>Hablemos de tu próxima aventura</h2>
+                        <p>Completá el formulario con tu consulta. También podés encontrarnos en nuestras redes sociales.</p>
+                        <p>Instagram: <a href="https://www.instagram.com/pillowcreek/" target="_blank" rel="noopener noreferrer">@pillowcreek</a></p>
+                    </div>
+                    <div class="formulario">
+                        <h2 id="formulario-titulo">Enviá tu consulta</h2>
+                        <form action="#" method="get">
+                            <div class="campo"><label for="nombre">Nombre</label><input type="text" id="nombre" name="nombre" autocomplete="name" required></div>
+                            <div class="campo"><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" required></div>
+                            <div class="campo"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" rows="6" required></textarea></div>
+                            <p class="aviso-form">Formulario de demostración: todavía no envía mensajes.</p>
+                            <button class="btn btn-primary" type="submit">Enviar consulta</button>
+                        </form>
+                    </div>
+                </section>
+            </main>
+            <footer class="site-footer">
                 <p>Seguinos en nuestras redes sociales</p>
-                <p><a href="https://www.instagram.com/pillowcreek/" target="_blank">instagram</a></p>
-                <p><a href="https://www.facebook.com/pillowcreek/" target="_blank">facebook</a></p>    
-                <p> &copy; 2026 pillow creek. todos los derechos reservados.</p>
-        </footer>
+                <div class="footer-redes">
+                    <a href="https://www.instagram.com/pillowcreek/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://www.facebook.com/pillowcreek/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                </div>
+                <p class="copyright">&copy; 2026 Pillow Creek. Todos los derechos reservados.</p>
+            </footer>
+        </div>
     </body>
 </html>

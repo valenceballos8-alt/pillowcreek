@@ -3,47 +3,57 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sale - PILLOW CREEK</title>
+        <meta name="description" content="Pillow Creek: equipamiento de camping y aventura.">
+        <title>Ofertas - PILLOW CREEK</title>
         <link rel="icon" href="../assets/logopillowcreek.png" type="image/png">
         <link rel="stylesheet" href="../style/style.css">
     </head>
     <body>
-        <header class="header">
-            <h1><a href="../index.html" class="logo">PILLOW CREEK</a></h1>
-            <nav class="navbar">
-                <ul>
-                    <li><a class="nav-link" href="../index.html">inicio</a></li>
-                    <li><a class="nav-link" href="nosotros.html">nosotros</a></li>
-                    <li><a class="nav-link" href="productos.html">productos</a></li>
-                    <li><a class="nav-link" href="ofertas.html">sale</a></li>
-                    <li><a class="nav-link" href="contacto.html">contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="productos-en-oferta">
-                <h2>Ofertas y descuentos</h2>
-                <p>Aprovechá nuestras ofertas y descuentos en productos seleccionados para tu próxima aventura</p>
-            </section>
-            <section class="productos-en-oferta">
-                <h2>Productos en oferta</h2>
-                <article>
-                    <h3>Linterna para camping</h3>
-                    <img src="../assets/linterna-camping.png" alt="linterna para camping" width="300" height="200">
-                    <h4>Linterna de alta calidad, resistente al agua con carga solar, ideal para acampar en cualquier clima</h4>
-                </article>
-                <article>
-                    <h3>Mochila para camping</h3>
-                    <img src="../assets/mochila-sale.png" alt="mochila para camping" width="300" height="200">
-                    <h4>Mochila resistente y espaciosa, perfecta para llevar todos tus suministros durante tus aventuras al aire libre</h4>
-                </article>
-            </section>
-        </main>
-        <footer id="contacto">
+        <div class="grid-container">
+            <header class="site-header">
+                <a class="logo" href="../index.html" aria-label="Pillow Creek, ir al inicio">
+                    <img src="../assets/logopillowcreek.png" alt="Pillow Creek" width="160" height="80">
+                </a>
+                <nav class="nav" aria-label="Navegación principal">
+                    <ul>
+                        <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li><a class="nav-link" href="productos.html">Productos</a></li>
+                        <li><a class="nav-link activo" href="ofertas.html" aria-current="page">Ofertas</a></li>
+                        <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main id="contenido">
+                <section class="page-intro intro-ofertas">
+                    <p class="eyebrow">Oportunidades outdoor</p>
+                    <h1>Ofertas y descuentos</h1>
+                    <p>Aprovechá nuestras ofertas en productos seleccionados para tu próxima aventura.</p>
+                </section>
+                <section class="section-wrap" aria-labelledby="ofertas-titulo">
+                    <h2 class="section-title" id="ofertas-titulo">Productos en oferta</h2>
+                    <div class="ofertas-grid">
+                        <article class="producto oferta-card">
+                            <span class="etiqueta-oferta">En oferta</span>
+                            <img src="../assets/linterna-camping.png" alt="Linterna de camping con carga solar" loading="lazy">
+                            <div class="producto-info"><h3>Linterna para camping</h3><p>Linterna resistente al agua con carga solar, ideal para acampar en distintos climas.</p></div>
+                        </article>
+                        <article class="producto oferta-card">
+                            <span class="etiqueta-oferta">En oferta</span>
+                            <img src="../assets/mochila-sale.png" alt="Mochila para camping" loading="lazy">
+                            <div class="producto-info"><h3>Mochila para camping</h3><p>Mochila resistente y espaciosa, perfecta para llevar tus suministros durante tus aventuras al aire libre.</p></div>
+                        </article>
+                    </div>
+                </section>
+            </main>
+            <footer class="site-footer">
                 <p>Seguinos en nuestras redes sociales</p>
-                <p><a href="https://www.instagram.com/pillowcreek/" target="_blank">instagram</a></p>
-                <p><a href="https://www.facebook.com/pillowcreek/" target="_blank">facebook</a></p>   
-                <p> &copy; 2026 pillow creek. todos los derechos reservados.</p>
-        </footer>
-    </body>  
-</html> 
+                <div class="footer-redes">
+                    <a href="https://www.instagram.com/pillowcreek/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://www.facebook.com/pillowcreek/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                </div>
+                <p class="copyright">&copy; 2026 Pillow Creek. Todos los derechos reservados.</p>
+            </footer>
+        </div>
+    </body>
+</html>

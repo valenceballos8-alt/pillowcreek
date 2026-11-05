@@ -3,48 +3,70 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PILLOW CREEK</title>
-        <link rel="icon" href="./assets/logopillowcreek.png" type="image/png">
-        <link rel="stylesheet" href="./style/style.css">
+        <meta name="description" content="Pillow Creek: equipamiento de camping y aventura.">
+        <title>Inicio - PILLOW CREEK</title>
+        <link rel="icon" href="../assets/logopillowcreek.png" type="image/png">
+        <link rel="stylesheet" href="../style/style.css">
     </head>
     <body>
         <div class="grid-container">
-            <header>
-                <a href="./index.html" class="logo">
-                    <img src="./assets/logopillowcreek.png" alt="Logo de PILLOW CREEK">
+            <header class="site-header">
+                <a class="logo" href="../index.html" aria-label="Pillow Creek, ir al inicio">
+                    <img src="../assets/logopillowcreek.png" alt="Pillow Creek" width="160" height="80">
                 </a>
-                <nav class="nav">
+                <nav class="nav" aria-label="Navegación principal">
                     <ul>
-                        <li><a class="nav-link activo" href="./index.html">inicio</a></li>
-                        <li><a class="nav-link" href="./pages/nosotros.html">nosotros</a></li>
-                        <li><a class="nav-link" href="./pages/productos.html">productos</a></li>
-                        <li><a class="nav-link" href="./pages/ofertas.html">ofertas</a></li>
-                        <li><a class="nav-link" href="./pages/contacto.html">contacto</a></li>
+                        <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li><a class="nav-link" href="./pages/nosotros.html">Nosotros</a></li>
+                        <li><a class="nav-link" href="./pages/productos.html">Productos</a></li>
+                        <li><a class="nav-link" href="./pages/ofertas.html">Ofertas</a></li>
+                        <li><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
             </header>
-            <main>
-                <section class="hero">
+            <main id="contenido">
+                <section class="hero" aria-labelledby="hero-titulo">
                     <div class="hero-content">
-                        <h1>PILLOW CREEK</h1>
-                        <h2>Camping & aventura</h2>
-                        <p>Equipate para la naturaleza. <br>productos de camping y todo lo que necesitas para tu próxima aventura.<br></p>
+                        <p class="eyebrow">Explorá sin límites</p>
+                        <h1 id="hero-titulo">PILLOW CREEK</h1>
+                        <h2>Camping &amp; Aventura</h2>
+                        <span class="decoracion" aria-hidden="true"></span>
+                        <p>Equipate para la naturaleza. Encontrá todo lo que necesitás para tu próxima aventura.</p>
                         <div class="hero-buttons">
                             <a class="btn btn-primary" href="./pages/productos.html">Ver productos</a>
-                            <a class="btn btn-secondary" href="./pages/ofertas.html">Ver ofertas</a>       
+                            <a class="btn btn-secondary" href="./pages/ofertas.html">Ver ofertas</a>
                         </div>
                     </div>
                 </section>
+                <section class="categorias section-wrap" aria-labelledby="categorias-titulo">
+                    <h2 id="categorias-titulo" class="section-title">Explorá nuestras categorías</h2>
+                    <div class="categorias-grid">
+                        <a class="categoria carpas" href="./pages/productos.html#carpas">
+                            <img src="./assets/carpa-camping.png" alt="Carpa de camping" loading="lazy">
+                            <h3>Carpas y refugios</h3>
+                        </a>
+                        <a class="categoria mochilas" href="./pages/productos.html#mochilas">
+                            <img src="./assets/mochila-camping.png" alt="Mochila de camping" loading="lazy">
+                            <h3>Mochilas y bolsos</h3>
+                        </a>
+                        <a class="categoria accesorios" href="./pages/productos.html#bolsas">
+                            <img src="./assets/bolsa-dormir.png" alt="Bolsa de dormir" loading="lazy">
+                            <h3>Bolsas de dormir</h3>
+                        </a>
+                    </div>
+                </section>
+                <section class="beneficios section-wrap" aria-label="Nuestros beneficios">
+                    <div><h2>Equipamiento outdoor</h2><p>Productos para acompañarte en cada salida.</p></div>
+                    <div><h2>Elegí tu aventura</h2><p>Carpas, mochilas y accesorios para explorar.</p></div>
+                </section>
             </main>
-            <footer id="contacto">
-                <ul>
-                    <p>Seguinos en nuestras redes sociales</p>
-                    <p><a href="https://www.instagram.com/pillowcreek/" target="_blank">instagram</a></p>
-                    <p><a href="https://www.facebook.com/pillowcreek/" target="_blank">facebook</a></p>
-                </ul>
-                <div>
-                    <p> &copy; 2026 pillow creek. todos los derechos reservados.</p>
+            <footer class="site-footer">
+                <p>Seguinos en nuestras redes sociales</p>
+                <div class="footer-redes">
+                    <a href="https://www.instagram.com/pillowcreek/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://www.facebook.com/pillowcreek/" target="_blank" rel="noopener noreferrer">Facebook</a>
                 </div>
+                <p class="copyright">&copy; 2026 Pillow Creek. Todos los derechos reservados.</p>
             </footer>
         </div>
     </body>
